@@ -9,7 +9,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
-                  bat "C:/sonar-scanner-4.7.0.2747-windows/bin/sonar-scanner -D sonar.login=admin -D sonar.password=Khushal@123 -D sonar.projectKey=example2 -D sonar.exclusions=vendor/**,resources/**,**/*.java -D sonar.host.url=http://localhost:9000"
+                  bat "C:/sonar-scanner-4.7.0.2747-windows/bin/sonar-scanner -D sonar.login=admin -D sonar.password=Khushal@123 -D sonar.projectKey=react1 -D sonar.exclusions=vendor/**,resources/**,**/*.java -D sonar.host.url=http://localhost:9000"
                 }
             }
         }
