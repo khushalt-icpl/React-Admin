@@ -52,7 +52,7 @@ pipeline {
             steps {
       	        withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
         	    bat "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-                bat 'docker push khhushal123/react'
+                bat 'docker push khushal123/react'
             }
       }
     }
